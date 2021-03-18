@@ -15,6 +15,9 @@ if __name__ == '__main__':
 	index = data['index']
 	names = data['names'][0]
 
+	if len(index) == 1:
+		index = index.T
+
 	if tractID_list != "all":
 		print("Keeping only some of the tracts")
 		tractID_list = np.array(eval(tractID_list), ndmin=1)
