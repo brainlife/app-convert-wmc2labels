@@ -27,7 +27,7 @@ if __name__ == '__main__':
 		for n, name in enumerate(names):
 			if n+1 not in tractID_list:
 				names[n][0] = 'NC'
-
+	print(names)
 	index_structure = 'index.csv'
 	print('Writing indeces in ' + index_structure)
 	for ind in index:
@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
 	names_structure = 'names.csv'
 	print('Writing names in ' + names_structure)
-	for n in range(len(names)):
+	for n in range(len(names)+1):
 		if n==0:
 			row = [0, 'NC']
 		else:
