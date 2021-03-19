@@ -8,7 +8,7 @@ set -x
 singularity exec -e docker://brainlife/dipy:1.1.1 python3 wmc2labels.py
 
 mkdir -p output
-mv index.csv output
-mv names.csv output
+mv index.csv output/indeces.csv
+mv names.csv output/classes.csv
 
 echo "All done!"
